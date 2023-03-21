@@ -12,7 +12,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd java-web-app '
         sh 'docker build -t szdariusz/java-web-app:latest .'
       }
     }
