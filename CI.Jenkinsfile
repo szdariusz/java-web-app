@@ -13,14 +13,14 @@ pipeline {
         }
         stage("Build"){
             steps{
-                dir("simple-java-maven-app"){
+                dir("java-web-app"){
                     sh "mvn clean install"
                 }
             }
         }
         stage("Test"){
             steps{
-                dir("simple-java-maven-app"){
+                dir("java-web-app"){
                     sh "mvn test"
                 }
             }
